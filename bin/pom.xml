@@ -10,7 +10,7 @@
     </parent>
     <groupId>br.edu.utfpr.td.tsi</groupId>
     <artifactId>myBankProject-CreditCard</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>myBankProject-CreditCard</name>
     <description>myBankProject-CreditCard</description>
     <properties>

@@ -1,6 +1,7 @@
 package br.edu.utfpr.td.tsi.mybankprojectcreditcard.controllers;
 
 import br.edu.utfpr.td.tsi.mybankprojectcreditcard.domains.CreditCard;
+import br.edu.utfpr.td.tsi.mybankprojectcreditcard.models.CreditCardDAO;
 import br.edu.utfpr.td.tsi.mybankprojectcreditcard.models.ICreditCardDAO;
 import org.springframework.stereotype.Component;
 
@@ -9,10 +10,11 @@ import java.util.List;
 
 @Component
 public class CreditCardController {
+	
     private final ICreditCardDAO creditCardDAO;
 
-    public CreditCardController(ICreditCardDAO creditCardDAO) {
-        this.creditCardDAO = creditCardDAO;
+    public CreditCardController() {
+        this.creditCardDAO = new CreditCardDAO();
     }
 
     public CreditCard create(int cardLevel, String name, int userId) {
